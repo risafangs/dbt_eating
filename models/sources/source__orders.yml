@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: source__orders
+    description: "Order-level data from eating data set"
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique
+      - name: restaurant_id
+        tests:
+          - not_null
+      - name: ordered_at
+        tests:
+          - not_null
+      - name: total_amount
+        tests:
+          - not_null
+      - name: sub_total
+      - name: status
+        tests:
+          - not_null
+          - accepted_values: 
+              values: ['confirmed', 'ordered', 'canceled']

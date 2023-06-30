@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: source__restaurants
+    description: "Mapping table for restaurant name, characteristics, and id"
+    columns:
+      - name: restaurant_id
+        tests:
+          - not_null
+          - unique
+      - name: name
+        tests:
+          - not_null
+      - name: type
+        tests:
+          - not_null

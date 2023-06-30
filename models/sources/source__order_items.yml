@@ -1,0 +1,19 @@
+version: 2
+
+models:
+
+  - name: source__order_items
+    description: ""
+    columns:
+      - name: order_id
+        tests: # add relationship test
+          - not_null
+      - name: quantity
+        tests:
+          - not_null
+      - name: item_name
+        tests:
+          - not_null
+      - name: price
+        tests:
+          - not_null
