@@ -1,0 +1,12 @@
+eating:
+  outputs:
+    dev:
+      account: brooklyndatapartner
+      authenticator: externalbrowser
+      database: ANALYTICS_DEV
+      schema: BDC_LISA
+      threads: 4
+      type: snowflake
+      user: lisa.fang@brooklyndata.co
+      warehouse: DEVELOPER
+  target: dev
