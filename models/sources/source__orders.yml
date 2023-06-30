@@ -11,6 +11,9 @@ models:
       - name: restaurant_id
         tests:
           - not_null
+          - relationships:
+              to: ref('source__restaurants')
+              field: restaurant_id
       - name: ordered_at
         tests:
           - not_null

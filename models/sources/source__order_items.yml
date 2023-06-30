@@ -8,6 +8,9 @@ models:
       - name: order_id
         tests: # add relationship test
           - not_null
+          - relationships:
+              to: ref('source__orders')
+              field: order_id
       - name: quantity
         tests:
           - not_null
