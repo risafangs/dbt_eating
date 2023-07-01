@@ -6,6 +6,9 @@ Try running the following commands:
 - dbt run
 - dbt test
 
+### Prefect notes
+- need to use virtual environment from prefect-training  
+- prefect files are in .prefect
 
 ### Resources:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
