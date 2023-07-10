@@ -1,6 +1,10 @@
 from prefect import flow
 from prefect_dbt.cli.commands import DbtCoreOperation
 from prefect.deployments import Deployment
+from prefect_snowflake import SnowflakeCredentials
+
+# brought this in but not sure how to use it
+#snowflake_credentials_block = SnowflakeCredentials.load("bdc-snowflake")
 
 project_dir_path = "~/clients/internal/dbt_eating/"
 
