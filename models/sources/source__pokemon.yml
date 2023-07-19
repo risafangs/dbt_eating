@@ -1,0 +1,37 @@
+version: 2
+
+models:
+  - name: source__pokemon
+    description: "Raw pokemon data from Github including ID, type, stats"
+    columns:
+      - name: pokedex_id
+        tests:
+          - not_null
+      - name: code
+      - name: serial
+        tests:
+          - not_null
+          - unique
+      - name: name
+        tests:
+          - not_null
+      - name: type1
+        tests:
+          - not_null
+      - name: type2
+      - name: color
+      - name: ability1
+      - name: ability2
+      - name: ability_hidden
+      - name: generation
+      - name: legendary
+      - name: mega_evolution
+      - name: height
+      - name: weight
+      - name: hp
+      - name: atk
+      - name: def
+      - name: sp_atk
+      - name: sp_def
+      - name: spd
+      - name: total

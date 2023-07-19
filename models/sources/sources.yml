@@ -9,3 +9,8 @@ sources:
       - name: order_items
       - name: restaurants
 
+  - name: open_data
+    database: analytics_dev
+    schema: bdc_lisa
+    tables:
+      - name: pokemon 
