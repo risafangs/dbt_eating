@@ -1,17 +1,13 @@
 from prefect import flow
 from prefect_dbt.cli.commands import DbtCoreOperation
 from prefect.deployments import Deployment
-from prefect_snowflake import SnowflakeCredentials
 
-# brought this in but not sure how to use it
-#snowflake_credentials_block = SnowflakeCredentials.load("bdc-snowflake")
-
-project_dir_path = "~/clients/internal/dbt_eating/"
+project_dir_path = "~/clients/internal/not_jaffle_shop/"
 
 @flow
 def trigger_dbt_flow() -> str:
     result = DbtCoreOperation(
-        commands=["dbt debug", "dbt build"],
+        commands=["dbt debug", "dbt run"],
         project_dir=project_dir_path,
         profiles_dir="." # copied my personal profile here
     ).run()
