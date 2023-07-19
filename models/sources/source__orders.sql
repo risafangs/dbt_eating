@@ -26,6 +26,7 @@ with
              order_id
              , restaurant_id
              , ordered_at
+             , type
              , total_amount
              , sub_total
              , status
