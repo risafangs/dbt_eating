@@ -2,7 +2,7 @@ from prefect import flow
 from prefect_dbt.cli.commands import DbtCoreOperation
 from prefect.deployments import Deployment
 
-project_dir_path = "~/clients/internal/not_jaffle_shop/"
+project_dir_path = "~/clients/internal/dbt_eating/"
 
 @flow
 def trigger_dbt_flow() -> str:
