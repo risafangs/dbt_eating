@@ -1,3 +1,5 @@
+-- use split_part to fix reading of ordered_at
+
 with
     source as (
 
