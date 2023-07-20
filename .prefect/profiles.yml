@@ -5,8 +5,10 @@ eating:
       authenticator: externalbrowser
       database: ANALYTICS_DEV
       schema: BDC_LISA
-      threads: 4
+      threads: 1
       type: snowflake
       user: lisa.fang@brooklyndata.co
       warehouse: DEVELOPER
+      client_session_keep_alive: true
+      reuse_connection: true
   target: dev
